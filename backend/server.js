@@ -14,5 +14,6 @@ app.use(express.urlencoded({extended:false}))
 
 
 app.use('/api/goals',require('./routes/goalRoutes'))
+app.use('/api/users',require('./routes/userRoutes'))
 app.use(errorHander)
 app.listen(port,()=> console.log(`Server stared on port: ${port} `))
